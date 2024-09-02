@@ -1,0 +1,507 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add some styles for body*/
+body {
+    background: #F6F7FB;
+    font-family: "Sora", system-ui;
+    font-style: normal;
+    font-size: 16px;
+
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    max-width: 1124px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.btn-group {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: auto;
+}
+
+.btn {
+    padding: 12px 24px;
+    background: #5DB082;
+    border-radius: 37px;
+    color: #F6F7FB;
+}
+
+.link-btn {
+    color: #737F8B;
+}
+
+.logo-image {
+    width: 43px;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+}
+
+.section-hero {
+    width: 100%;
+    position: relative;
+    padding-bottom: 124px;
+}
+
+.hero-info {
+    padding-top: 96px;
+    padding-left: 72px;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 600;
+    max-width: 495px;
+    letter-spacing: -1px;
+    text-align: start;
+    text-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.hero-contents {
+    max-width: 510px;
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #737F8B;
+    margin-bottom: 82px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    padding: 4px;
+    background: #CAD4FA;
+    border-radius: 57px;
+    max-width: 157px;
+    margin-bottom: 32px;
+    color: #333333;
+}
+
+.tag p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6281F7;
+}
+
+.tag-opacity-ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #6281F7;
+
+}
+
+.tag-opacity-img {
+    position: relative;
+    left: +1px;
+    width: 14px;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.section-process {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 67px;
+    background: #161739 url('../images/bg-1.svg');
+    background-size: 98%;
+    position: relative;
+}
+
+.section-process:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 300px;
+    position: absolute;
+    background-image: url('../images/bg-2.svg');
+    background-position-y: -300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.process-heading {
+    color: #F6F7FB;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+    max-width: 450px;
+    text-align: center;
+}
+
+.process-heading-contents {
+    color: #737F8B;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.process-heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 510px;
+    margin-bottom: 72px;
+}
+
+.emoji-ico {
+    font-size: 48px;
+    padding: 36px;
+    border-radius: 12px;
+    max-width: 120px;
+    max-height: 120px;
+    line-height: 100%;
+}
+
+.process-list {
+    display: flex;
+    gap: 65px;
+    z-index: 1;
+
+}
+
+.process-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+    max-width: 225px;
+}
+
+.process-item p {
+    text-align: center;
+}
+
+.process-title {
+    color: #F6F7FB;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.process-contents {
+    color: #C9D0DA;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bg-color-blue {
+    background: #6281F7;
+}
+
+.bg-color-yellow {
+    background: #F5C044;
+}
+
+.bg-color-green {
+    background: #5DB082;
+}
+
+.bg-color-purple {
+    background: #6D4AE5;
+}
+
+.section-technics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.technics-list {
+    max-width: 939px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+}
+
+.technic-item {
+    max-width: 939px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technic-image {
+    max-width: 457px;
+}
+
+.technics-contents {
+    width: 358px;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.margin-right-auto {
+    margin-right: auto;
+}
+
+.technics-contents ul li {
+    display: flex;
+    gap: 12px;
+    color: #737F8B;
+    font-size: 14px;
+    align-items: center;
+}
+
+.technics-contents ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    color: #737F8B;
+}
+
+.technics-contents .ico {
+    font-size: 24px;
+    padding: 11px;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
+.technics-contents h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333333;
+}
+
+.technics-contents .contents {
+    color: #737F8B;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background: #161739;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1115px;
+    margin-left: 95px;
+}
+
+.footer-container div {
+    display: flex;
+}
+
+.footer-title {
+    color: #F6F7FB;
+    font-size: 36px;
+    max-width: 554px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    margin-bottom: 131px;
+    margin-right: 129px;
+}
+
+.footer-title span {
+    color: #5DB082;
+}
+
+.footer-logo {
+    color: #F6F7FB;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 95px;
+}
+
+.margin-right-16 {
+    margin-right: 16px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.margin-right-91 {
+    margin-right: 91px;
+}
+
+@media screen and (max-width: 1023px) {
+    header {
+        max-width: unset;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .hero-info {
+        padding-top: 109px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-contents {
+        margin-bottom: 100px;
+    }
+
+    .process-list {
+        flex-direction: column;
+    }
+
+    .section-process:before {
+        display: none;
+    }
+
+    .technic-item {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .technics-contents, .technic-image {
+        margin-left: unset;
+        display: flex;
+        flex-direction: column;
+
+        align-items: start;
+    }
+
+    .technics-list {
+        position: relative;
+        max-width: 457px;
+    }
+
+    .technics-list .technic-item:nth-child(1) {
+        padding-bottom: 570px;
+    }
+
+    .technics-list .technic-item:nth-child(1) .technic-image {
+        position: absolute;
+        top: 450px;
+        left: 0;
+
+    }
+
+    .technics-list .technic-item:nth-child(2) .technics-contents {
+        margin-bottom: 72px;
+    }
+
+    .technics-list .technic-item:nth-child(3) {
+        padding-bottom: 570px;
+        position: relative;
+    }
+
+    .technics-list .technic-item:nth-child(3) .technic-image {
+        position: absolute;
+        top: 450px;
+        left: 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container div {
+        margin-bottom: 38px;
+    }
+
+    .footer-title {
+        font-size: 24px;
+        margin-bottom: 53px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    header {
+        padding-left: 38px;
+        padding-right: 61px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        max-width: 466px;
+    }
+
+    .hero-image {
+        width: 534px;
+    }
+
+    .section-process:before {
+        display: none;
+    }
+
+    .process-list {
+        max-width: 698px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
